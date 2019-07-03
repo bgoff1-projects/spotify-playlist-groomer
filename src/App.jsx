@@ -125,7 +125,7 @@ class App extends React.Component {
       window.location.replace(`https://accounts.spotify.com/authorize` +
         `?response_type=token&client_id=${client_id}` +
         `&scope=${encodeURIComponent('user-read-private user-read-email')}` +
-        `&redirect_uri=${encodeURIComponent('https://bgoff1.github.io/spotify-playlist-groomer/')}`, {
+        `&redirect_uri=${encodeURIComponent('https://bgoff1-projects.github.io/spotify-playlist-groomer/')}`, {
           credentials: 'include'
         });
       return null;
