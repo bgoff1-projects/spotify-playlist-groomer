@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/spotify-playlist-groomer/static/css/main.2cce8147.chunk.css",
+    "main.js": "/spotify-playlist-groomer/static/js/main.f39032d6.chunk.js",
+    "main.js.map": "/spotify-playlist-groomer/static/js/main.f39032d6.chunk.js.map",
+    "runtime~main.js": "/spotify-playlist-groomer/static/js/runtime~main.9724bee8.js",
+    "runtime~main.js.map": "/spotify-playlist-groomer/static/js/runtime~main.9724bee8.js.map",
+    "static/js/2.d5ed7b26.chunk.js": "/spotify-playlist-groomer/static/js/2.d5ed7b26.chunk.js",
+    "static/js/2.d5ed7b26.chunk.js.map": "/spotify-playlist-groomer/static/js/2.d5ed7b26.chunk.js.map",
+    "index.html": "/spotify-playlist-groomer/index.html",
+    "precache-manifest.d288b886c4f18ec8db8ae0d7d8662316.js": "/spotify-playlist-groomer/precache-manifest.d288b886c4f18ec8db8ae0d7d8662316.js",
+    "service-worker.js": "/spotify-playlist-groomer/service-worker.js",
+    "static/css/main.2cce8147.chunk.css.map": "/spotify-playlist-groomer/static/css/main.2cce8147.chunk.css.map"
+  }
+}
