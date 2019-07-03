@@ -19,8 +19,7 @@ class App extends React.Component {
       const hashMap = {
         access_token: '',
         token_type: '',
-        expires_in: '',
-        state: ''
+        expires_in: ''
       };
       window.location.hash.substring(1).split('&').forEach(item => {
         const i = item.split('=');
@@ -58,19 +57,14 @@ class App extends React.Component {
         const tracks = new Map();
         const dupes = [];
         this.checkForDuplicateItems(items, tracks, dupes);
-        console.log(tracks);
-        console.log(dupes);
         let next = response.tracks.next;
         while (next !== null) {
           const res = await fetch(next, {
             headers: { 'Authorization': this.state.auth }
           }).then(res => res.json());
-          console.log(res);
           if (res && res.items) {
-            console.log('in response');
             this.checkForDuplicateItems(res.items, tracks, dupes);
           }
-          console.log(res);
           next = res.next;
         }
         if (dupes.length > 0) {
@@ -131,7 +125,7 @@ class App extends React.Component {
       window.location.replace(`https://accounts.spotify.com/authorize` +
         `?response_type=token&client_id=${client_id}` +
         `&scope=${encodeURIComponent('user-read-private user-read-email')}` +
-        `&redirect_uri=${encodeURIComponent('http://localhost:3000/')}&state=123`, {
+        `&redirect_uri=${encodeURIComponent('https://bgoff1.github.io/spotify-playlist-groomer/')}`, {
           credentials: 'include'
         });
       return null;
