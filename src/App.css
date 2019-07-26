@@ -1,3 +1,5 @@
+@import "../node_modules/bulmaswatch/slate/bulmaswatch.min.css";
+
 .App {
   text-align: center;
 }
@@ -30,4 +32,13 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.list-item:hover {
+  background-color: #54595e;
+}
+
+span.list-item {
+  background-color: #3a3f44;
+  cursor: pointer;
 }

@@ -131,10 +131,12 @@ class App extends React.Component {
       return null;
     }
     return <div>
-      {this.state.user}
-      <ul>
-        {this.state.playlists.map((item, index) => <li key={'playlist name ' + item.name} onClick={() => this.handleClick(item)}>{item.name}</li>)}
-      </ul>
+      <h1 className="subtitle" style={{ marginLeft: '1em', marginTop: '1em', marginBottom: '0.5em' }}>Scanning playlists for: {this.state.user}</h1>
+      <div style={{ marginLeft: '1em', marginRight: '1em' }} className="list is-hoverable">
+        {this.state.playlists.map((item, index) =>
+          <span className="list-item" key={'playlist name ' + item.name} onClick={() => this.handleClick(item)}>{item.name}</span>
+        )}
+      </div>
       <hr />
       {this.state.selected ?
         <span>
